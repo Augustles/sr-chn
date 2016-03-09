@@ -21,7 +21,8 @@ SCHEDULER_PERSIST = True
 #SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
 #SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderQueue"
 #SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderStack"
-
+#指定爬虫关闭的最大空闲时间
+SCHEDULER_IDLE_BEFORE_CLOSE = 10
 #在spider中得到的item会最终传到itempipline中处理，而这里设置的就是启动的pipline
 #其中第一个是自己实现的pipeline,第二个是scrapy_redis实现的pipeline
 
